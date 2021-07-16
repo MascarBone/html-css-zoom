@@ -19,9 +19,64 @@ body {
 }
 .content-header__button {
     padding: 5px 10px;
-    background-color: rgba(80, 80, 80, 0.9);
+    background-color: rgb(52, 52, 52);
+    font-size: 1.2em;
     color: white;
     border: none;
     border-radius: 4px;    
     margin-left: 5px;
+}
+
+.content-main {
+    width: 90%;
+    margin: 0 auto;
+    /* height: 85vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.content-main__user {
+    flex: 1 0 300px;
+}
+
+.content-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(33, 35, 36);
+    color: white;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool {
+    display: inline-block;
+    text-align: center;
+}
+
+.tool__icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 10px;
+}
+.tool__icon i {
+    font-size: 2em;
+}
+.tool__icon p {
+    font-size: 1.2em;
+}
+
+.tool__icon_meeting:hover i{
+    color: greenyellow;
+}
+.tool__icon_end-meeting {
+    height: 100%;
+    background-color: rgb(99, 105, 108);
+    color: tomato;
 }
