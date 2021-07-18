@@ -27,6 +27,26 @@ body {
     margin-left: 5px;
 }
 
+.main {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.main__side {
+    padding: 0 20px;
+    text-align: center;
+}
+.main__side i {    
+    font-size: 4em;
+}
+.main__side_left {
+    text-align: right;
+}
+.main__side_right {
+    text-align: left;
+}
+
 /* Tentativo di usare Flex con Flex-Wrap e Justify-Content:Flex-Start,
 dando dei margini agli items all'interno del contenitore.  */
 /* .content-main {
@@ -43,7 +63,7 @@ dando dei margini agli items all'interno del contenitore.  */
 
 /* Provare con Flex-Wrap e Flex-Grow, dando del margine agli items */
 .content-main {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +118,12 @@ dando dei margini agli items all'interno del contenitore.  */
     text-align: center;
 }
 
+.option {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 .tool__icon {
     display: inline-block;
     vertical-align: middle;
@@ -117,4 +143,6 @@ dando dei margini agli items all'interno del contenitore.  */
     height: 100%;
     background-color: rgb(99, 105, 108);
     color: tomato;
+    display: flex;
+    align-items: center;
 }
