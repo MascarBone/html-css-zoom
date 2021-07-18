@@ -47,14 +47,19 @@ dando dei margini agli items all'interno del contenitore.  */
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .content-main__user {
-    margin: 7px;    
-    flex-grow: 1;
+    margin: 7px;   
+    flex: 1 0 350px;
+    
 }
 .content-main__user img {
-    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    /* width: 350px;
+    height: 280px; */
+    
 }
 
 /* Pirmo tentativo effettuato */
