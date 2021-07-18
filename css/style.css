@@ -27,20 +27,53 @@ body {
     margin-left: 5px;
 }
 
+/* Tentativo di usare Flex con Flex-Wrap e Justify-Content:Flex-Start,
+dando dei margini agli items all'interno del contenitore.  */
+/* .content-main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.content-main__user {
+    margin: 7px;
+} */
+
+/* Provare con Flex-Wrap e Flex-Grow, dando del margine agli items */
 .content-main {
     width: 90%;
     margin: 0 auto;
-    /* height: 85vh; */
     display: flex;
     flex-wrap: wrap;
+    
+}
+.content-main__user {
+    margin: 7px;    
+    flex-grow: 1;
+}
+.content-main__user img {
+    width: 100%;
+}
+
+/* Pirmo tentativo effettuato */
+/* .content-main {
+    width: 90%;
+    margin: 0 auto;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     justify-content: space-between;
+    justify-content: space-evenly;
     align-content: space-between;
     align-items: flex-start;
     overflow: hidden;
 }
 .content-main__user {
     flex: 1 0 300px;
-}
+} */
 
 .content-footer {
     width: 100%;
