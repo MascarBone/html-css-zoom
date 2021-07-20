@@ -12,6 +12,11 @@ header {
     height: 100px;
     line-height: 100px;
 }
+footer {
+    height: 100px;
+    background-color: rgb(33, 35, 36);
+    color: white;
+}
 .content-header {
     /* height: 100%; */
     text-align: right;
@@ -75,6 +80,7 @@ dando dei margini agli items all'interno del contenitore.  */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: auto;
 }
 .content-main__user {
     margin: 7px;   
