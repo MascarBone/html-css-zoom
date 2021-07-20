@@ -8,42 +8,49 @@
 body {
     background-color: black;
 }
-
+header {
+    height: 100px;
+    line-height: 100px;
+}
 .content-header {
-    /* position: absolute;
-    top: 10px;
-    right: 20px; */
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
+    /* height: 100%; */
+    text-align: right;
 }
 .content-header__button {
     padding: 5px 10px;
     background-color: rgb(52, 52, 52);
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: white;
     border: none;
     border-radius: 4px;    
-    margin-left: 5px;
+    margin-right: 20px;
 }
 
-.main {
+
+/* Container main della gallery e delle frecce per la navigazione */
+.container-main {
+    width: 100%;
+    height: calc (100vh - 180px);
+    margin: 0 auto;
     color: white;
     display: flex;
     align-items: center;
+    position: relative;
 }
-
-.main__side {
-    padding: 0 20px;
-    text-align: center;
-}
-.main__side i {    
+.main-side i {    
     font-size: 4em;
 }
-.main__side_left {
+.main-side__side {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.main-side__side_left {
+    left: 20px;
     text-align: right;
 }
-.main__side_right {
+.main-side__side_right {
+    right: 20px;
     text-align: left;
 }
 
@@ -63,7 +70,7 @@ dando dei margini agli items all'interno del contenitore.  */
 
 /* Provare con Flex-Wrap e Flex-Grow, dando del margine agli items */
 .content-main {
-    /* width: 90%; */
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
